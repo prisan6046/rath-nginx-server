@@ -1,0 +1,16 @@
+version: '2'
+services:
+  ruth-server-nginx:
+    container_name: ruth-server-nginx
+    image: nginx
+    external_links:
+      - ruth-server-font
+      - ruth-api-backend
+    mem_limit: 256m
+    volumes:
+      - "./conf/:/etc/nginx/conf.d/"
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    network_mode: bridge
