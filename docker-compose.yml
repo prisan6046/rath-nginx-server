@@ -4,7 +4,7 @@ services:
     container_name: ruth-server-nginx
     image: nginx
     external_links:
-      - ruth-server-font
+      - ruth-font-new
       - ruth-api-backend
     mem_limit: 256m
     volumes:
