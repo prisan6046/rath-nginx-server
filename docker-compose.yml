@@ -6,6 +6,7 @@ services:
     external_links:
       - ruth-font-new
       - ruth-api-backend
+      - pdf-web
     mem_limit: 256m
     volumes:
       - "./conf/:/etc/nginx/conf.d/"
